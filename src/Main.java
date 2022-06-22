@@ -67,6 +67,6 @@ public class Main {
     private static void consultClasses() {
         System.out.println("Classes cadastradas: \n");
         Information information = FileUtil.loadFileData(file,folder,info);
-        System.out.println(information.toString());
+        System.out.println(information.toString() + "\n");
     }
 }
