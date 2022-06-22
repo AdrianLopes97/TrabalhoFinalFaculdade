@@ -5,13 +5,13 @@ import java.util.List;
 public abstract class Person {
     protected String Name;
     protected int Age;
-    protected String Addres;
+    protected String Address;
     protected String PhoneNumber;
 
-    public Person(String name, int age, String addres, String phoneNumber) {
+    public Person(String name, int age, String address, String phoneNumber) {
         Name = name;
         Age = age;
-        Addres = addres;
+        Address = address;
         PhoneNumber = phoneNumber;
     }
 
@@ -31,12 +31,12 @@ public abstract class Person {
         Age = age;
     }
 
-    public String getAddres() {
-        return Addres;
+    public String getAddress() {
+        return Address;
     }
 
-    public void setAddres(String addres) {
-        Addres = addres;
+    public void setAddres(String address) {
+        Address = address;
     }
 
     public String getPhoneNumber() {

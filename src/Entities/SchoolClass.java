@@ -3,19 +3,32 @@ package Entities;
 import java.util.List;
 
 public class SchoolClass {
+    private String ClassName;
     private Teacher Teacher;
     private List<Student> Students;
 
-    public SchoolClass(Entities.Teacher teacher, List<Student> students) {
+    public SchoolClass() {
+    }
+
+    public SchoolClass(String className, Entities.Teacher teacher, List<Student> students) {
+        ClassName = className;
         Teacher = teacher;
         Students = students;
     }
 
-    public Entities.Teacher getTeacher() {
+    public String getClassName() {
+        return ClassName;
+    }
+
+    public void setClassName(String className) {
+        ClassName = className;
+    }
+
+    public Teacher getTeacher() {
         return Teacher;
     }
 
-    public void setTeacher(Entities.Teacher teacher) {
+    public void setTeacher(Teacher teacher) {
         Teacher = teacher;
     }
 
@@ -34,7 +47,8 @@ public class SchoolClass {
     @Override
     public String toString() {
         return "SchoolClass{" +
-                "Teacher=" + Teacher +
+                "ClassName='" + ClassName + '\'' +
+                ", Teacher=" + Teacher +
                 ", Students=" + Students +
                 '}';
     }
